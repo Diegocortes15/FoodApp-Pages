@@ -1,0 +1,36 @@
+/** Sass or CSS Variables **/
+
+:root {
+	// --color-grad-2: #28b485;
+	// --color-grad-1: #7ed56f;
+	--color-grad-1: #188ed8;
+	--color-grad-2: #2bf0f5;
+	--color-grad-3: #13b2e4;
+	--color-grad-4: #11c4e4;
+	--color-grad-4: #10cde4;
+
+	--color-accent: #f28b30;
+
+	--color-sematic-1: #e03838;
+	--color-sematic-2: #39be61;
+	--color-sematic-3: #ffaa01;
+	--color-sematic-4: #2eb4e7;
+
+	--grayish-glue: hsl(233, 8%, 62%);
+	--light-grayish-blue: hsl(220, 16%, 96%);
+	--very-light-gray: hsl(0, 0%, 98%);
+
+	--gradient: linear-gradient(
+		to right bottom,
+		var(--color-grad-1),
+		var(--color-grad-2)
+	);
+
+	--open-sans: 'Open Sans', sans-serif; // 600 400
+	--poppins: 'Poppins', sans-serif; // 600 700 800
+
+	--regular: 400; // Open sans
+	--semi-bold: 600; // Open sans, Poppins
+	--bold: 700; // Poppins
+	--extra-bold: 800; // Poppins
+}

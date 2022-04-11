@@ -1,0 +1,36 @@
+.course {
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		&:not(:last-of-type) {
+			padding-bottom: 3rem;
+			margin-bottom: 2rem;
+			border-bottom: 0.1rem solid #cccccc;
+		}
+	}
+
+	&__content {
+		font-size: 2rem;
+		font-family: var(--open-sans);
+
+		& .heading-quaternary {
+			font-size: 2.8rem;
+			text-transform: none;
+			color: black;
+		}
+	}
+
+	&__label {
+		font-weight: var(--semi-bold);
+		margin-bottom: 1rem;
+		&:last-of-type {
+			margin-bottom: 4rem;
+		}
+		&--span {
+			font-weight: var(--regular);
+			color: var(--color-grad-1);
+		}
+	}
+}

@@ -1,0 +1,38 @@
+/*
+Main Sass input file
+
+Import scss files to merge
+@import 'folder/scss-file';
+
+folder > _scss-file.scss
+
+*/
+
+@import 'abstratcs/mixins';
+@import 'abstratcs/variables';
+
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/article-entry';
+@import 'components/button';
+@import 'components/carousel';
+@import 'components/composition';
+@import 'components/course';
+@import 'components/entry';
+@import 'components/feature-content';
+@import 'components/promo';
+@import 'components/scroll-bar';
+@import 'components/section-heading';
+
+@import 'layout/footer';
+@import 'layout/header-page';
+@import 'layout/header';
+@import 'layout/mobile-nav';
+@import 'layout/navigation';
+
+@import 'pages/blog';
+@import 'pages/home';
+@import 'pages/index';

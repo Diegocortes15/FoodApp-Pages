@@ -1,0 +1,59 @@
+.composition {
+	position: relative;
+
+	&__img {
+		position: absolute;
+		// border: 1.5rem solid black;
+		outline: 1.5rem solid var(--color-grad-1);
+		max-width: 55%;
+		transition: 0.2s ease-in-out;
+		box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+		@include respond(phone) {
+			outline: 0.5rem solid var(--color-grad-1);
+		}
+
+		&:hover {
+			outline-offset: 1rem;
+			transform: scale(1.02);
+			box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+			z-index: 20 !important;
+			outline: 1rem solid var(--color-grad-1);
+		}
+
+		&.photo--1 {
+			top: 4rem;
+			left: 4rem;
+			z-index: 3;
+			@include respond(phone) {
+				left: 4rem;
+			}
+		}
+
+		&.photo--2 {
+			top: 27rem;
+			right: 14rem;
+			z-index: 5;
+			@include respond(phone) {
+				left: calc(50% / 2);
+				/* top: 55rem;
+				left: 2rem; */
+			}
+		}
+
+		&.photo--3 {
+			top: 0rem;
+			right: 2rem;
+			z-index: 1;
+			@include respond(phone) {
+				top: 7rem;
+			}
+		}
+	}
+
+	&:hover &__img:not(:hover) {
+		transform: scale(0.95);
+		-webkit-filter: blur(0.2rem);
+		filter: blur(0.2rem);
+		outline: none;
+	}
+}

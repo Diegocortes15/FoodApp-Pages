@@ -1,0 +1,16 @@
+.promo {
+	text-align: center;
+
+	&__box-text {
+		margin-bottom: 8rem;
+	}
+
+	&__icon {
+		margin-bottom: 2rem;
+		& svg {
+			height: 4rem;
+			width: 4rem;
+			fill: url(#promo__icon-bg);
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/** Auxiliary styles **/
+
+.container {
+	max-width: 112rem;
+	width: 97%;
+	margin: 0 auto;
+	@include respond(tab-land) {
+		padding: 0 1rem;
+	}
+}
+
+.section {
+	transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+	opacity: 0;
+	transform: translateY(8rem);
+}
+
+.u-bg-light-gray {
+	background-color: #f3f3f1 !important;
+}
+
+.u-margin-bottom--medium {
+	margin-bottom: 6rem !important;
+}
+
+.u-margin-bottom--small {
+	margin-bottom: 3rem !important;
+}

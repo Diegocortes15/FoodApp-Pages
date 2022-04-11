@@ -1,0 +1,93 @@
+/** navigation styles **/
+
+.nav-bar {
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	transition: all 0.5s;
+	position: fixed;
+	z-index: 1000;
+	max-height: 8rem;
+
+	&.sticky {
+		background: var(--color-grad-1);
+		max-height: auto;
+	}
+
+	&__nav {
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&__logo {
+		&-link {
+			font-family: var(--poppins);
+			text-transform: uppercase;
+			font-weight: var(--semi-bold);
+			color: white;
+			font-size: 3rem;
+			text-decoration: none;
+
+			@include respond(phone) {
+				font-size: 5rem;
+			}
+		}
+		&-span {
+			font-weight: var(--extra-bold);
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 8rem;
+
+		max-height: inherit;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+	}
+
+	&__item {
+		padding: 0 1rem;
+	}
+
+	&__link {
+		display: inline-block;
+		font-family: var(--open-sans);
+		font-weight: var(--semi-bold);
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		color: white;
+		text-decoration: none;
+		transition: all 0.2s;
+		&:hover {
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+			transform: rotate(5deg) scale(1.1);
+			background-color: var(--color-grad-1);
+		}
+	}
+
+	&__nav-mobile {
+		display: none;
+
+		@include respond(phone) {
+			display: inline-block;
+		}
+
+		& svg {
+			fill: white;
+			width: 6rem;
+			height: 6rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

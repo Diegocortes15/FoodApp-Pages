@@ -1,0 +1,77 @@
+.section-testimonial {
+	&__carousel {
+		position: relative;
+	}
+	&__carousel-controller {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		left: 50%;
+		transform: translate(-50%, 5rem);
+		z-index: 50;
+		padding: 0 1rem;
+		&--left,
+		&--right {
+			cursor: pointer;
+			background-color: transparent;
+			border: 0;
+
+			& svg {
+				height: 4rem;
+				width: 4rem;
+				fill: url(#promo__icon-bg);
+			}
+		}
+	}
+
+	&__list {
+		position: relative;
+		list-style: none;
+		display: flex;
+		overflow: hidden;
+		padding: 2rem 0;
+		z-index: 25;
+	}
+
+	&__item {
+		text-align: center;
+		min-width: calc(100% / 3);
+		padding: 0 1rem;
+		transition: transform 0.5s;
+
+		@include respond(tab-port) {
+			min-width: calc(100% / 2);
+		}
+
+		@include respond(phone) {
+			min-width: 100%;
+		}
+
+		&-thumb {
+			height: 6rem;
+			width: 6rem;
+			position: relative;
+			margin: 0 auto;
+			margin-bottom: 2.5rem;
+
+			&--img {
+				height: inherit;
+				width: inherit;
+				position: absolute;
+				object-fit: cover;
+				border-radius: 50%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				box-shadow: 0rem 0.5rem 1.3rem rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		&-content {
+			background-color: white;
+			padding: 2rem 1.5rem;
+			border-radius: 1rem;
+			box-shadow: 0 0rem 1.3rem rgba(0, 0, 0, 0.3);
+		}
+	}
+}

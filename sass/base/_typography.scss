@@ -1,0 +1,41 @@
+/** Typography rules **/
+.heading-primary {
+	font-family: var(--poppins);
+	font-weight: var(--extra-bold);
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.heading-secondary {
+	font-family: var(--poppins);
+	font-weight: var(--extra-bold);
+	line-height: 1.7;
+	font-size: 2.6rem;
+	text-transform: uppercase;
+}
+
+.heading-tertiary {
+	font-family: var(--poppins);
+	font-weight: var(--semi-bold);
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+.heading-quaternary {
+	font-family: var(--poppins);
+	font-weight: var(--bold);
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.paragraph {
+	font-family: var(--open-sans);
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}

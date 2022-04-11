@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<script defer src="index.js"></script>
+		<title>FoodApp Landing</title>
+	</head>
+
+	<body>
+		<main>
+			<div class="mobile-nav">
+				<button class="mobile-nav__button mobile-nav__button--close">
+					<svg>
+						<use xlink:href="images/solid.svg#xmark"></use>
+					</svg>
+				</button>
+				<div class="mobile-nav__background">&nbsp;</div>
+				<nav class="mobile-nav__nav">
+					<ul class="mobile-nav__list">
+						<li class="mobile-nav__item">
+							<a href="index.html" class="mobile-nav__link">Landing</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="home.html" class="mobile-nav__link">Home</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#section-features" class="mobile-nav__link">Features</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#section-screenshots" class="mobile-nav__link">Screenshots</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#section-testimonial" class="mobile-nav__link">Testimonial</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a href="#section-cta" class="mobile-nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="nav-bar container">
+				<div class="nav-bar__content container">
+					<div class="nav-bar__logo">
+						<a href="index.html" class="nav-bar__logo-link">Food<span class="nav-bar__logo-span">app</span></a>
+					</div>
+					<nav class="nav-bar__nav">
+						<ul class="nav-bar__list">
+							<li class="nav-bar__item">
+								<a href="home.html" class="nav-bar__link">Home</a>
+							</li>
+							<li class="nav-bar__item">
+								<a href="#section-features" class="nav-bar__link">Features</a>
+							</li>
+							<li class="nav-bar__item">
+								<a href="#section-screenshots" class="nav-bar__link">Screenshots</a>
+							</li>
+							<li class="nav-bar__item">
+								<a href="#section-testimonial" class="nav-bar__link">Testimonial</a>
+							</li>
+							<li class="nav-bar__item">
+								<a href="#section-cta" class="nav-bar__link">Contact</a>
+							</li>
+							<li class="nav-bar__item">
+								<button class="nav-bar__cta btn__primary">Go app</button>
+							</li>
+						</ul>
+					</nav>
+					<div class="nav-bar__nav-mobile">
+						<svg>
+							<use xlink:href="images/solid.svg#bars"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<header class="header">
+				<div class="header__content container">
+					<div class="header__text-box">
+						<h1 class="heading-primary">
+							Over 1000 recipes <br />
+							for Cooking!
+						</h1>
+						<p class="header__paragraph paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. <br />
+							It has survived not only five centuries.
+						</p>
+						<button class="btn__primary">Go app</button>
+					</div>
+					<div class="header__img-box">&nbsp;</div>
+				</div>
+			</header>
+
+			<section class="section-promo">
+				<div class="section-promo__content container">
+					<div class="promo">
+						<div class="promo__icon">
+							<svg class="svg-settings">
+								<defs>
+									<linearGradient id="promo__icon-bg" gradientTransform="rotate(45)">
+										<stop offset="50%"  stop-color="var(--color-grad-1)" />
+										<stop offset="100%" stop-color="var(--color-grad-2)" />
+									</linearGradient>
+								</defs>
+								<use xlink:href="images/solid.svg#tablet-screen-button"></use>
+							</svg>
+						</div>
+						<h3 class="heading-tertiary">Full responsive</h3>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.
+						</p>
+					</div>
+					<div class="promo">
+						<div class="promo__icon">
+							<svg>
+								<use xlink:href="images/solid.svg#clone"></use>
+							</svg>
+						</div>
+						<h3 class="heading-tertiary">Well Documented</h3>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.
+						</p>
+					</div>
+					<div class="promo">
+						<div class="promo__icon">
+							<svg>
+								<use xlink:href="images/solid.svg#pen-to-square"></use>
+							</svg>
+						</div>
+						<h3 class="heading-tertiary">Clean Design</h3>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-features" class="section-features section">
+				<div class="section-features__content container">
+					<div class="section-features__heading section-heading">
+						<h2 class="heading-secondary">Foodapp features</h2>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.<br />
+							It has survived not only five centuries.
+						</p>
+					</div>
+					<div class="section-features__wrap">
+						<ul class="feature-content__left">
+							<li class="feature-content__item left">
+								<h3 class="heading-tertiary">Fast connect</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+							<li class="feature-content__item left">
+								<h3 class="heading-tertiary">Free update</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+							<li class="feature-content__item left">
+								<h3 class="heading-tertiary">60+ themes</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+						</ul>
+						<ul class="feature-content__right">
+							<li class="feature-content__item right">
+								<h3 class="heading-tertiary">Clean design</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+							<li class="feature-content__item right">
+								<h3 class="heading-tertiary">54 languages</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+							<li class="feature-content__item right">
+								<h3 class="heading-tertiary">600+ supporters</h3>
+								<p class="feature-content__paragraph paragraph">
+									Lorem Ipsum is simply dummy text of the printing and industry.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="section-features__mockup">
+						<img
+							src="images/features-mockup.png"
+							alt="feature-mockup"
+							class="section-features__mockup-img"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-screenshots" class="section-screenshots section">
+				<div class="section-screenshots__content container">
+					<div class="section-screenshots__heading section-heading">
+						<h2 class="heading-secondary">Screenshots</h2>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.<br />
+							It has survived not only five centuries.
+						</p>
+					</div>
+					<div class="section-screenshots__gallery">
+						<div class="composition">
+							<img
+								src="images/photo-1.PNG"
+								alt="photo-1"
+								class="composition__img photo--1"
+							/><img
+								src="images/photo-2.PNG"
+								alt="photo-2"
+								class="composition__img photo--2"
+							/><img
+								src="images/photo-3.PNG"
+								alt="photo-3"
+								class="composition__img photo--3"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-testimonial" class="section-testimonial u-bg-light-gray section">
+				<div class="section-testimonial__content">
+					<div class="section-testimonial__heading section-heading">
+						<h2 class="heading-secondary">Testimonial</h2>
+						<p class="paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry.<br />
+							It has survived not only five centuries.
+						</p>
+					</div>
+					<div class="section-testimonial__carousel container">
+
+						<div class="section-testimonial__carousel-controller container">
+							<button class="section-testimonial__carousel-controller--left">
+								<svg>
+									<use xlink:href="images/solid.svg#arrow-left"></use>
+								</svg>
+							</button>
+							<button class="section-testimonial__carousel-controller--right">
+								<svg>
+									<use xlink:href="images/solid.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+
+						<ul class="section-testimonial__list">
+							<li class="section-testimonial__item">
+								<div class="section-testimonial__item-thumb">
+									<img src="images/person-1.jpg" alt="person"  class="section-testimonial__item-thumb--img">
+								</div>
+								<div class="section-testimonial__item-content">
+									<h4 class="heading-quaternary">Alena Kalt</h4>
+									<p class="paragraph">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									</p>
+								</div>
+							</li>
+							<li class="section-testimonial__item">
+								<div class="section-testimonial__item-thumb">
+									<img src="images/person-2.jpg" alt="person"  class="section-testimonial__item-thumb--img">
+								</div>
+								<div class="section-testimonial__item-content">
+									<h4 class="heading-quaternary">Angelina Rose</h4>
+									<p class="paragraph">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									</p>
+								</div>
+							</li>
+							<li class="section-testimonial__item">
+								<div class="section-testimonial__item-thumb">
+									<img src="images/person-3.jpg" alt="person"  class="section-testimonial__item-thumb--img">
+								</div>
+								<div class="section-testimonial__item-content">
+									<h4 class="heading-quaternary">Jonathan Smith</h4>
+									<p class="paragraph">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									</p>
+								</div>
+							</li>
+							<li class="section-testimonial__item">
+								<div class="section-testimonial__item-thumb">
+									<img src="images/person-4.jpg" alt="person" class="section-testimonial__item-thumb--img">
+								</div>
+								<div class="section-testimonial__item-content">
+									<h4 class="heading-quaternary">Noah Klaus</h4>
+									<p class="paragraph">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-cta" class="section-cta section">
+				<div class="section-cta__content container">
+					<h2 class="heading-secondary">Download foodapp today</h2>
+					<p class="paragraph">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry.<br />
+						It has survived not only five centuries.
+					</p>
+					<button class="btn__primary">Go web app</button>
+				</div>
+			</section>
+
+			<section class="section-subscribe section">
+				<div class="section-subscribe__content container">
+					<form action="#" class="section-suscribe__form">
+						<input class="section-suscribe__form-input type="email" placeholder="Enter Your Email Adress..." />
+						<button class="section-suscribe__form-submit type="submit">Subscribe</button>
+					</form>
+					<ul class="section-suscribe__social">
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#facebook-f"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#google-plus-g"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#skype"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="section-suscribe__item">
+							<a href="#" class="section-suscribe__link">
+								<svg>
+									<use xlink:href="images/brands.svg#pinterest"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<p class="footer__copy">
+					&copy; 2022 All right reserved |
+					<a href="https://github.com/Diegocortes15">Diego Cortés</a>
+				</p>
+			</footer>
+		</main>
+	</body>
+</html>
